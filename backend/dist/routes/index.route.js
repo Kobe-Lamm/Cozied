@@ -1,0 +1,15 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+// Stores all routes.
+const express_1 = require("express");
+// Importing routers: 
+const auth_route_1 = __importDefault(require("./auth.route"));
+// Creating a new router:
+const router = (0, express_1.Router)();
+// Defining routes:
+router.use('/auth', auth_route_1.default);
+exports.default = router;
+//# sourceMappingURL=index.route.js.map
